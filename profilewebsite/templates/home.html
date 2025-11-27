@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+
+
+<header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg>
+      <span class="ml-3 text-xl">Home</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a  href="{{url_for("home")}} "class="mr-5 hover:text-white">Home</a>
+         <a  href="{{url_for("skills")}} "class="mr-5 hover:text-white">Skill's</a>
+
+      <a  href="{{url_for("education")}} " class="mr-5 hover:text-white">Education</a>
+      <a href="{{url_for("form")}} "  class="mr-5 hover:text-white">Contact</a>
+    </nav>
+   
+  </div>
+</header>
+
+
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+      <!-- Circular image with indigo-500 border -->
+      <div class="w-80 h-80 mx-auto"> <!-- Adjust size as needed -->
+        <img 
+          class="w-full h-full object-cover rounded-full border-8 border-indigo-500 
+                 shadow-2xl shadow-indigo-500/50 
+                 transition-all duration-300 hover:shadow-indigo-500/70" 
+          alt="hero" 
+          src="https://media.licdn.com/dms/image/v2/D4D03AQHg9SP2MqCWvA/profile-displayphoto-scale_400_400/B4DZqX8SswIEAk-/0/1763485758464?e=1766016000&v=beta&t=5h3MegWZfDt_eROajOM1e4_hrFDLoQOE5Xeqh2OkA2Y">
+      </div>
+    </div>
+    
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Navpreet 
+        <br class="hidden lg:inline-block">Singh
+<h2 class="text-indigo-400 text-xl font-semibold mb-4">About Me</h2>
+
+      </h1>
+      <p class="mb-8 leading-relaxed">I’m currently pursuing a Bachelor of Commerce with a strong focus on understanding business strategy, finance, and organizational dynamics. Alongside my academic journey, I’m passionately building expertise in Python programming and software development.
+I enjoy designing and developing practical, small-scale projects that address real-world challenges—whether it’s automating workflows, analyzing data, or creating tools that improve efficiency for businesses and individuals. My dual exposure to commerce and technology has given me a unique perspective on how innovative digital solutions can drive operational excellence, informed decision-making, and sustainable growth.
+I’m particularly excited about the intersection of business and technology—exploring areas like fintech, data-driven strategy, process automation, and entrepreneurial applications of code. Through hands-on projects and continuous learning, I aim to bridge the gap between business needs and technical execution, delivering impactful and user-centered solutions.
+Looking forward to connecting, collaborating, and contributing to meaningful ideas at the confluence of commerce and technology.</p>
+        </div>
+  </div>
+</section>
+
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <span class="ml-3 text-xl"></span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500"></p>
+    </div>
+              </div>
+    </div>
+  </div>
+  <div class="bg-gray-800 bg-opacity-75">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-400 text-sm text-center sm:text-left">Maintained and developed by Navpreet Singh
+           </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+             
+        <a href="https://www.linkedin.com/in/navpreet-singh-524512294/"class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+ </body>
+</html>
