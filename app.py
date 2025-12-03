@@ -14,7 +14,7 @@ def home():
     if ip and "," in ip:
         ip = ip.split(",")[0].strip()
     try:
-        location = requests.get(f"http://ip-api.com/json/{ip}").json()
+        location = requests.get(f"https://ipwho.is/{ip}").json()
     except:
         location = {"status": "fail"}
     di = {
@@ -72,3 +72,4 @@ def form():
 
 #if __name__=="__main__":
    #app.run(debug=True,host="0.0.0.0",port="1127")
+
